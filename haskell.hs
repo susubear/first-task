@@ -10,7 +10,7 @@ import Data.List
 null' [] = True
 null' n = False
 
---pembatas
+--pembatashe
 
 take' x = x
 
@@ -80,7 +80,7 @@ notElem' x = x
 
 --pembatas
 
-head' x = x
+head' (x:xs) = x
 
 --pembatas
 

@@ -20,11 +20,11 @@ drop' x = x
 
 --pembatas
 
-fst' x = x
+fst' (x,xs) = x
 
 --pembatas
 
-snd' x = x
+snd' (x,xs) = xs
 
 --pembatas
 
@@ -92,7 +92,7 @@ reverse' x = x
 
 --pembatas
 
-last' x = x
+last' (x:xs) = last xs
 
 --pembatas
 
@@ -209,6 +209,10 @@ maximum' x = x
 inits' x = x
 
 --pembatas
+
+tail' (x:xs) = xs
+
+-- pembatas
 
 tails' x = x
 

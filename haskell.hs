@@ -12,7 +12,9 @@ null' n = False
 
 --pembatashe
 
-take' x = x
+take' _ [] = []
+take' 0 xs = []
+take' n (x:xs) = x: take' (n-1) xs
 
 --pembatas
 

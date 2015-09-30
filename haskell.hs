@@ -10,6 +10,9 @@ import Data.List
 null' [] = True
 null' n = False
 
+null' [] = True
+null' (x:xs) = False
+
 --pembatashe
 
 take' _ [] = []
